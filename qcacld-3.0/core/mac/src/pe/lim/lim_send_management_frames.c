@@ -5339,9 +5339,7 @@ void lim_send_mgmt_frame_tx(tpAniSirGlobal mac_ctx,
 {
 	struct sir_mgmt_msg *mb_msg = (struct sir_mgmt_msg *)msg->bodyptr;
 	uint32_t msg_len;
-#ifdef WLAN_DEBUG
 	tpSirMacFrameCtl fc = (tpSirMacFrameCtl) mb_msg->data;
-#endif
 	uint8_t sme_session_id;
 	uint16_t auth_algo;
 
